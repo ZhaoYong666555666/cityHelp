@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font: 12px/30px "幼圆"; }
+
+a {
+  text-decoration: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0; }
+
+.l {
+  float: left; }
+
+.r {
+  float: right; }
+
+li {
+  list-style: none; }
+
+header {
+  height: 40px;
+  background: #ccc;
+  width: 100%;
+  padding: 10px 10%; }
+  header li {
+    float: left; }
+  header a {
+    padding: 0 10px;
+    color: black; }
+  header .list {
+    position: relative; }
+
+.banner {
+  width: 100%;
+  height: 435px;
+  background-color: transparent;
+  background: url(https://p.ssl.qhimg.com/t01a581f5103d99dd1f.png) center no-repeat pink; }
+
+.center {
+  width: 100%;
+  height: 160px;
+  background-color: transparent;
+  background: url(https://p.ssl.qhimg.com/t01689f34cf3fc55642.png) center no-repeat pink; }
+
+section {
+  width: 100%;
+  height: 160px;
+  background-color: transparent;
+  background: url(https://p.ssl.qhmsg.com/t0134e931213092d978.jpg) center no-repeat pink; }
+
+main {
+  width: 970px;
+  height: auto;
+  background-color: transparent;
+  font-family: "幼圆";
+  margin: 0 auto; }
+  main h1, main h3 {
+    font-weight: 700; }
+  main h1 {
+    text-align: center; }
+  main h3, main p {
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 30px; }
+  main h3 {
+    background: url(https://p.ssl.qhmsg.com/t01995f61cc3127a378.png) no-repeat; }
+  main p + p {
+    background: url(https://p.ssl.qhmsg.com/t01837f6956b0ed5883.png) no-repeat; }
+
+footer {
+  width: 100%;
+  background: #ccc;
+  clear: both;
+  height: 300px;
+  padding: 20px;
+  text-align: center; }
+  footer #foot {
+    width: 80%;
+    margin: 0 auto;
+    height: 150px;
+    margin-bottom: 50px; }
+    footer #foot div {
+      float: left;
+      margin-right: 50px;
+      text-indent: 50px; }
+    footer #foot h4 {
+      line-height: 44px;
+      font-size: 25px; }
+    footer #foot .one h4 {
+      background: url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 0; }
+    footer #foot .two h4 {
+      background: url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -44px; }
+    footer #foot .three h4 {
+      background: url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -88px; }
+    footer #foot .four h4 {
+      background: url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -132px; }
+    footer #foot .five h4 {
+      background: url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -176px; }
+  footer #end {
+    clear: both; }

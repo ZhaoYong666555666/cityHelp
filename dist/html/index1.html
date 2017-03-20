@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><title></title><script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script></head><body><div style="width: 100px;height: 100px;background-color: red"></div><button id="btn1">测试ajax请求</button> <button id="btn2">测试ajax请求</button><script type="text/javascript">var jsBtn1 = $("#btn1");
+		jsBtn1.bind("click", function(){
+			$.ajax({
+				type:"GET",
+				url:"test1.json",
+				// dataType:"json",
+				success:function(data, status){
+					console.log(data);
+					console.log(typeof data);
+				},
+			});
+		});
+
+		var jsBtn2 = $("#btn2");
+		jsBtn2.bind("click", function(){
+			$.ajax({
+				type:"GET",
+				url:"test2.json",
+				// dataType:"json",
+				success:function(data, status){
+					console.log(data);
+					console.log(typeof data);
+				},
+			});
+		});</script></body></html>

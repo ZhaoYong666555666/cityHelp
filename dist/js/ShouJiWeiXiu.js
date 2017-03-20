@@ -1,0 +1,1 @@
+$(function(){$(".main-bottom div").eq(0).show(),$(".main-top dl").each(function(i){$(".main-top dl").eq(i).on({mouseenter:function(){$(".slider").css({left:134*(i+1)-90}),$(".main-bottom div").eq(i).show().siblings(".main-bottom div").hide()}})})});

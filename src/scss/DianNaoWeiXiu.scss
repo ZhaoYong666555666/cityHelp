@@ -1,0 +1,377 @@
+*{
+padding:0;
+margin: 0;
+}
+body{
+     font-size:12px;
+}
+a{
+     text-decoration: none;
+
+}
+.l{
+
+     float:left;
+}
+.r{
+     float:right;
+}
+@mixin base($w:auto,$h:auto,$bg:transparent){
+     width:$w;
+     height:$h;
+     background-color:$bg;
+}
+li{
+     list-style: none;
+}
+header{
+     height: 40px;
+     background: #ccc;
+     width: 100%;
+     padding:10px 10%;
+     li{
+          float:left;
+     }
+     a{
+          padding:0 10px;
+          color:black;
+     }
+     .list{
+          position:relative;
+     }
+     .list section{
+          position:absolute;
+          z-index:100;
+           display:none;
+          left:50px;
+          top:30px;
+          //position:relative;
+          @include base($w:400px,$h:200px,$bg:orange);
+          span{
+               position:absolute;
+               top:10px;
+               right:20px;
+               cursor:pointer;
+          }
+
+     } 
+}
+#banner{
+     width:100%;
+     height:420px;
+     background:url(https://p.ssl.qhmsg.com/t01cec7a33e5679bd60.jpg) center no-repeat;
+}
+#type{
+      @include base($w:100%);
+      display:flex;
+      justify-content:space-around;
+     // background:red;
+      //margin-left: 210px;
+
+     dl{
+          float:left;
+          width:100px;
+          margin:0 40px;
+          &:hover{
+               color:#20AAED;
+          }
+     }
+     dt{
+          width:100px;
+          height:100px;
+          
+     }
+     dd{
+           text-align: center;
+     }
+    
+}
+nav{
+     @include base($w:100%,$h:180px,$bg:#ccc);
+     //padding:20px 65px;
+     clear: both;
+     margin-bottom:30px;
+     ul{
+          display:flex;
+          justify-content:space-around;
+          flex-wrap:wrap;
+          li{
+               @include base($w:260px,$h:40px,$bg:#fff);
+               line-height: 40px;
+               // float:left;
+               // margin:10px;
+               border-radius:10px;
+               margin-top:30px;
+               text-align:center;
+               &:hover{
+                    border:1px solid #20AAED
+               }
+          }
+     } 
+}
+//维修
+section{
+     width:88%;
+     margin:0px auto;
+     #maintain{
+          width:70%;
+          #pro,#county{
+               width:180px;
+               line-height:35px;
+               border:1px solid green;
+               float:left;
+               margin-right: 10px;
+               text-indent:16px;
+              margin-bottom: 20px;
+          }
+          
+          form{
+               line-height:35px;
+               float:left;
+               input{
+                    @include base($w:350px)
+                    outline: none;
+               }
+               button{
+                    @include base($w:100px,$bg:green)
+                    color:#fff;
+               }
+               
+          }
+          #option{
+               clear:both;
+               width:100%;
+               height:50px;
+               margin-top: 10px;
+               border:1px solid #ccc;
+               text-align:center;
+               background:#ccc;
+               li{
+                    float:left;
+                    @include base($w:100px,$bg:#ccc)
+                    line-height:50px;
+                    a:hover{
+                         text-decoration:none;
+                    }
+               }
+               #ditu{
+                    line-height:30px;
+                    margin-top:10px;
+                    border:1px solid #eee;
+                    margin-right:30px;
+                    width:120px;
+                    cursor:pointer;
+               }
+
+
+          }
+          .bottom{
+               clear:both;
+               dl{
+                    width:100%;
+                    height:170px;
+                    font-size:12px;
+                    position:relative;
+                    padding-top: 20px;
+                    margin-bottom: 0px;
+                    border-bottom:1px solid;
+                    &:hover{
+                         background:#ccc;
+                    }
+               }
+               dt{
+                    float:left;
+                    margin-right: 10px;
+                    margin-bottom:20px;
+                    padding:20px;
+                    img{
+                         width:100px;
+                       height:100px;
+                    }
+               }
+               dd{
+                    padding-top:20px;
+                    float:left;
+                    width:500px;
+                    line-height:35px;
+                    // &:hover{
+                    //      color:
+                    // }
+                    span{
+                         float:right;
+                         text-indent:20px;
+                    }
+                    .span1{
+                         background:url(../images/电脑维修/t01dddbd1775cf1d1d7.png) no-repeat 0px center;
+                    }
+                    .span2{
+                         background:url(../images/电脑维修/t0141b1afb0bd0d7e2e.png) no-repeat 0px center;
+                    }
+               }
+          }
+     }
+     .shangpu{
+          width:120px;
+          line-height:50px;
+          color:green;
+          text-align:center;
+          border:1px solid green;
+          position:absolute;
+          right:20px;
+          top:60px;
+          display:none;
+     }
+     .right{
+          float:right;
+          width:26%;
+          margin-top:60px;
+          border:1px solid #ccc;
+          h3{
+               background:#ccc;
+               line-height:45px;
+
+               margin-top:0;
+          }
+          .right_good{
+               height:120px;
+               padding:25px 20px;
+               border-bottom:1px solid #eee;
+               .shuzi{
+                    width:30px;
+                    border-radius: 50%;
+                    border:1px solid;
+                    line-height:30px;
+                    text-align:center;
+                    margin-top: 20px;
+     
+               }
+               .red{
+                    border:1px solid red;
+               }
+               img{
+                    width:70px;
+                    height:70px;
+                    margin:0 10px;
+               }
+          }
+     }
+     
+}
+.page{
+     clear:both;
+     width:88%;
+     margin:20px auto;
+     height:50px;
+     margin-bottom:30px;
+     padding-left: 50px;
+     span{
+     width:50px;
+     display:block;
+     text-align: center;
+     line-height:50px;
+     border:1px solid #ccc;
+     float:left;    
+     margin-right:10px;
+     // &:hover{
+     //   background:orange;
+     // }
+     }
+     #next{
+          width:100px;
+     }
+}
+footer{
+     width:100%;
+     background:#ccc;
+     clear:both;
+     height:300px;
+     padding:20px;
+     text-align:center;
+     #foot{
+        width:80%;
+        margin:0 auto;
+        height:150px;
+          margin-bottom:50px;
+          div{
+               float:left;
+               margin-right: 50px;
+               text-indent:50px;
+          }
+          h4{
+               line-height:44px;
+               font-size:25px;
+          }
+          .one h4{
+               background:url(../images/电脑维修/t01f943ad69c4601e97.gif) no-repeat 0 0;
+          }
+          .two h4{
+               background:url(../images/电脑维修/t01f943ad69c4601e97.gif) no-repeat 0 -44px ;
+          }
+          .three h4{
+               background:url(../images/电脑维修/t01f943ad69c4601e97.gif) no-repeat 0 -88px;
+          }
+          .four h4{
+               background:url(../images/电脑维修/t01f943ad69c4601e97.gif) no-repeat 0 -132px;
+          }
+          .five h4{
+               background:url(../images/电脑维修/t01f943ad69c4601e97.gif) no-repeat 0 -176px;
+          }
+     }
+     #end{
+          clear:both;
+          
+     }
+}
+//地图
+#meng{
+     width:100%;
+     height:100%;
+     position:fixed;
+     left:0;
+     top:0;
+     background:rgba(0,0,0,0.7);
+     display:none;
+     z-index:3000;
+     #map{
+          width:900px;
+          height:550px;
+          background:#fff;
+          margin:auto;
+          left:0;
+          top:0;
+          right:0;
+          bottom:0;
+          position:absolute;
+               h3{
+                    line-height:30px;
+                    padding: 0 20px;
+                    span{
+                         float:right;
+                         font-size:20px;
+                        }
+               }
+               #container{
+                    width:900px;
+                    height:360px;
+               }
+               .page{
+                    padding-left:0;
+               }
+          }
+}
+.info-title{
+     //width:300px;
+     line-height:30px;
+     background:#ccc;
+     font-size:20px;
+     color:red;
+}
+.info-main,.info-addr{
+     width:350px;
+     text-overflow:ellipsis;
+     white-space:nowrap;
+     overflow:hidden;
+}
+a:hover{
+     text-decoration:none
+}

@@ -1,0 +1,205 @@
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	font:12px "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+ul,dl,dl,li{
+	list-style:none;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+.clear:after{
+	 content: ".";
+	 clear:both;
+	 visibility:hidden;
+	 height:0;
+	 display:block;
+}
+@mixin baseStyle($w:auto,$h:auto,$bg:transparent){
+	width:$w;
+	height:$h;
+	background-color:$bg;
+}
+//头部样式
+header{
+	@include baseStyle($w:100%,$h:32px,$bg:#eee);
+	line-height:32px;
+	section{
+		margin:0 auto;
+		@include baseStyle($w:1200px,$h:32px);
+		ul{
+			float:right;
+			li{
+				float:left;
+				a{
+					display:inline-block;
+					padding:0 10px 0 10px;
+				}
+			}
+		}
+	}
+}
+// swiper部分
+.banner{
+	.swiper-slide {
+	    overflow:hidden;
+	}
+	.swiper-slide img{
+		width:100%;
+		height:392px;
+	}
+}
+//主体部分
+article{
+	padding-top:30px;
+	h1{
+		text-align: center;
+		padding-bottom:30px;
+	}
+	.main-top{
+		margin:0 auto;
+		@include baseStyle($w:1200px,$h:163px);
+		display:flex;
+		justify-content:space-around;
+		text-align:center;
+		position:relative;
+		dl{
+			@include baseStyle($w:134px,$h:133px);
+			img{
+				width:68px;
+				height:68px;
+			}
+		}
+	}
+	.slider{
+		position:absolute;
+		bottom:0;
+		left:45px;
+		transition:1s;
+	}
+	.main-bottom-wrap{
+		width:100%;
+		background-color:#eee;
+		.main-bottom{
+			margin:0 auto;
+			@include baseStyle($w:1200px,$h:146px);
+			div{
+				line-height:146px;
+				display:none;
+				span{
+					display:inline-block;
+					text-align:center;
+					border:1px solid silver;
+					border-radius:8px;
+					margin-left:15px;
+					font:bold 16px/45px "幼圆";
+					@include baseStyle($w:220px,$h:45px,$bg:white);
+					&:hover{
+						border:2px solid red;
+						box-sizing:border-box;
+					}
+				}
+			}
+		}
+	}
+	.visit-service{
+		@include baseStyle($w:100%,$bg:silver);
+		h1{
+			font:bold 30px/80px "幼圆";
+		}
+		.visit-img{
+			margin:0 auto;
+			@include baseStyle($w:1100px,$h:323px,$bg:#ccc);
+			.swiper-wrapper{
+				margin:0 auto;
+				@include baseStyle($w:1030px,$h:323px,$bg:#ccc);
+			}
+			img{
+				margin-top:20px;
+				width:203px;
+				height:295px;
+			}
+		}
+	}
+	.brand{
+		margin:0 auto;
+		@include baseStyle($w:1200px,$h:218px);
+		background:url(../images/手机维修/素材/t018a0d4ca01a0a7b80.png) no-repeat center;
+	}
+	.people{
+		width:100%;
+		height:392px;
+		background:url(../images/手机维修/素材/t0143badb130710aad6.jpg) no-repeat center #08A1EB;
+	}
+}
+
+// 页脚部分
+// 页脚部分
+footer{
+	@include baseStyle($w:100%,$h:290px,$bg:#494E51);
+	.footer-top{
+		color:white;
+		margin:0 auto 20px;
+		padding-bottom:10px;
+		@include baseStyle($w:980px,$h:155px);
+		display:flex;
+		justify-content:space-around;
+		ul{
+			margin-top:20px;
+			text-indent:43px;
+			h3{
+				line-height:44px;
+			}
+			.h-one{
+				background:url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 0;
+			}
+			.h-two{
+				background:url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -44px;
+			}
+			.h-three{
+				background:url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -88px;
+			}
+			.h-four{
+				background:url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -132px;
+			}
+			.h-five{
+				background:url(../images/首页/t01f943ad69c4601e97.gif) no-repeat 0 -176px;
+			}
+			a{
+				display:block;
+				color:white;
+				line-height:26px;
+				font:14px "微软雅黑";
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+	.footer-bottom{
+		@include baseStyle($w:100%,$h:160px,$bg:#242C31);
+		padding-top:30px;
+		box-sizing:border-box;
+		p{
+			text-align:center;
+			color:gray;
+			font:12px/30px "微软雅黑";
+			a{
+				color:white;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>手机回收</title>
+		<link rel="stylesheet" href="../libs/css/swiper.css">
+		<link rel="stylesheet" type="text/css" href="../css/SouJiHuiShou.css"/>
+		<script type="text/javascript" src="../libs/js/jquery-3.1.1.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="header-left">
+				<span><a href="index.html">同城帮</a></span><span>上门服务</span>
+				<span>手机回收</span><span style="border: none;">二手良品</span>
+			</div>
+			<div class="header-right">
+				<span>我的订单</span><span>在线客服</span>
+				<span>客户服务</span><span style="border: none;color: red;">投诉建议</span>
+			</div>
+		</header>
+		
+		<!--轮播开始-->
+		<div class="warp">
+			<swiper>
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<a href="#"><img src="../images/手机回收/banner1.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="../images/手机回收/banner2.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="../images/手机回收/banner3.jpg" /></a>
+						</div>
+						<div class="swiper-slide">
+							<a href="#"><img src="../images/手机回收/banner4.jpg" /></a>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+			</swiper>
+		</div>
+		<div class="p1">
+			<h2>请选择型号：</h2>
+			<p style="float: right"><input type="text" placeholder="请输入品牌型号" /><span><b>搜索</b></span></p>
+			<p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
+			<img src="../images/手机回收/手机回收_03.jpg" style="display: block;margin:0 auto;"/><br />
+			<img src="../images/手机回收/手机回收_06.jpg"/>
+			<p>&nbsp;</p><p>&nbsp;</p>
+		</div>
+		<div class="p1">
+			<h2>限时高价回收：</h2>
+			<p>&nbsp;</p><p>&nbsp;</p>
+			<img src="../images/手机回收/手机回收_10.jpg"/>
+			<p>&nbsp;</p>
+		</div>
+		<div class="p1">
+			<h2>服务承诺：</h2>
+			<p>&nbsp;</p>
+			<img src="../images/手机回收/手机回收_14.jpg"/>
+			<p>&nbsp;</p>
+		</div>
+		<div class="p1">
+			<h2>用户评价：</h2>
+			<p>&nbsp;</p><p>&nbsp;</p>
+			<img src="../images/手机回收/手机回收_19.jpg"/>
+			
+			<p class="lastspan">查看更多评论</p>
+		</div>
+		<p>&nbsp;</p><p>&nbsp;</p>
+		<footer>
+			
+			<div class="foot-top">
+				<dl>
+					<dt><img src="../images/手机回收/footer1.png"/></dt>
+					<dd>&nbsp;</dd>
+					<dd><h3>购物指南</h3></dd><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><a href="">购物流程</a></dd>	
+					<dd style="margin-left: 40px;"><a href="">用户注册</a></dd>
+					<dd style="margin-left: 40px;"><a href="">帮助文档</a></dd>
+				</dl>
+				<dl>
+					<dt><img src="../images/手机回收/footer2.png"/></dt><dd>&nbsp;</dd>
+					<dd><h3>支付方式</h3></dd><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><a href="#">在线支付</a></dd>
+					<dd style="margin-left: 40px;"><a href="#">当面付款</a></dd>		
+				</dl> 
+				<dl>
+					<dt><img src="../images/手机回收/footer3.png"/></dt><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><h3>售后服务</h3></dd><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><a href="#">投诉建议</a></dd>		
+				</dl>
+				<dl>
+					<dt><img src="../images/手机回收/footer4.png"/></dt><dd> &nbsp;</dd>
+					<dd style="margin-left: 40px;"><h3>特色保障</h3></dd><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><a href="#">360担保支付</a></dd>		
+				</dl>
+				<dl>
+					<dt><img src="../images/手机回收/footer5.png"/></dt><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><h3>商家合作</h3></dd><dd>&nbsp;</dd>
+					<dd style="margin-left: 40px;"><a href="#" style="color: #239bf8;">加盟同城帮</a></dd>
+					<dd style="margin-left: 40px;"><a href="">新闻采访/跨界合作</a></dd>
+				</dl>
+				
+			</div>
+			<div class="foot-bottom">
+				<p>客服电话：4000-399-360<a href="#">投诉建议</a><a href="#">网站地图</a></p>
+				<p>Copyright © 2005-2016  360.CN  All Rights Reserved  360安全中心</p>
+				<p>京ICP备08010314号-19    京公网安备110000000006号</p>		
+			</div>
+			
+		</footer>
+		
+	</body>
+	<!-- 调用下载好的js文件 -->
+	<script type="text/javascript" src="../libs/js/swiper.jquery.js"></script>
+	<script type="text/javascript" src="../libs/js/swiper.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function() {
+		//初始化Swiper,返回初始化后的Swiper示例
+		var mySwiper = new Swiper('.swiper-container', {
+			//direction滑动方向 vertical垂直切换  horizontal水平切换
+			direction: 'horizontal',
+			//设置为true 则开启loop模式。loop模式：会在原本slide前后复制若干个slide并在合适的时候切换，让Swiper看起来是循环的。 
+			loop: true,
+			// 如果需要分页器
+			pagination: '.swiper-pagination',
+			//分页器样式 bullets圆点（默认） 	fraction分式 		progress进度条 	custom自定义
+			paginationType: 'bullets',
+			autoplay:2000,
+			//speed滑动速度单位是ms
+			speed: 600,
+			//自动切换的时间间隔单位为ms
+			//autoplay:3000,
+			paginationClickable: true,
+			grabCursor: true,
+		})
+	})
+		
+	</script>
+	
+</html>
